@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        .container
+        {
+            width:100%;
+            height:100%;
+            /* background-image: url("C:\CSS\roard.png"); */
+            /* background-repeat: no-repeat;
+            background-size: cover; */
+        }
+        .road
+        {
+            width:100%;
+            height:38rem;
+        }
+        .bike
+        {
+            position: absolute;
+            top:25%;
+            left:0;
+            width:300px;
+            height:300px;
+            animation-name: anim;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+.car 
+{
+    position: absolute;
+    top:49%;
+    right:0px;
+    animation-name: car-anim;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.bird
+{
+    position: absolute;
+    top:15%;
+    width:60px;
+    height: 40px;
+    right:50%;
+    animation: bird-anim 2s ease-in-out 1 ;
+    animation-fill-mode: forwards;
+}
+        body
+        {
+            overflow: hidden;
+        }
+        @keyframes anim
+        {
+            form{
+                transform: translateX(-100px);
+            }
+            to
+            {
+                transform: translateX(120rem);
+            }
+        }
+
+
+        @keyframes car-anim {
+            form{
+                 transform: translateX(120rem);
+            }
+            to
+            {
+                 transform: translateX(-120rem);
+            }
+        }
+
+        @keyframes bird-anim {
+            from 
+            {
+ transform: translateY(200px);
+            }
+            to
+            {
+                transform: translate(800px,0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <img src="C:\CSS\road.jpg" class="road">
+      <img src="C:\Users\dell\Downloads\bike_front-removebg-preview.png" class="bike">
+      <img src="C:\Users\dell\Downloads\car.png" class="car">
+      <img src="C:\Users\dell\Downloads\bird-removebg-preview.png" class="bird">
+
+           </div>
+</body>
+</html>
